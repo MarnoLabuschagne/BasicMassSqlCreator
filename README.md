@@ -1,5 +1,6 @@
 # BasicMassSqlCreator
-Input text file is in myl/src/project/departments.txt
+Input text files are in docs/input/*.txt
+Output text files are in docs/output/*.txt
 
 Output files are named after the second parameter used in lines 37 and 38
 
