@@ -1,0 +1,22 @@
+INSERT INTO caselogixcms_dev.juridicalpersons.JuridicalPersonNameTranslations (JuridicalPersonNameJuridicalPersonId, LegalName, OperatingName, Culture)
+VALUES
+('93dafb93-1c0e-41dc-bddf-756f47f789b3', 'Department of Agriculture, Aquaculture and Fisheries', 'Department of Agriculture, Aquaculture and Fisheries', 'en-ca'),
+('82e025a8-ea77-4cc6-adc1-66379cda0f19', 'Department of Economic Development', 'Department of Economic Development', 'en-ca'),
+('bffb8cd8-253f-48c7-8fc7-c98416e8f970', 'Department of Education and Early Childhood Development', 'Department of Education and Early Childhood Development', 'en-ca'),
+('d1ecd7a7-ca40-4737-91bc-248f4c811e45', 'Department of Energy and Mines', 'Department of Energy and Mines', 'en-ca'),
+('181a8daa-1ad7-4e4d-b071-59e5de68ec26', 'Department of Energy and Resource Development ', 'Department of Energy and Resource Development ', 'en-ca'),
+('eb8c89a1-ded8-486a-b069-53e298395f7c', 'Department of Environment and Local Government ', 'Department of Environment and Local Government ', 'en-ca'),
+('bb62443c-bf3b-40d2-be1a-c91cc532a5fb', 'Department of Finance ', 'Department of Finance ', 'en-ca'),
+('e5380230-c0a3-4687-b461-e369f02da398', 'Department of Government Services ', 'Department of Government Services ', 'en-ca'),
+('7a8e7794-15a6-45ab-9535-101fd4c87f9b', 'Department of Health ', 'Department of Health ', 'en-ca'),
+('1844214d-bbc5-44c1-92c1-fc8196bcb765', 'Department of Healthy and Inclusive Communities', 'Department of Healthy and Inclusive Communities', 'en-ca'),
+('b25718eb-f52a-4e32-b6d4-772e7840dbb6', 'Department of Human Resources ', 'Department of Human Resources ', 'en-ca'),
+('5e293086-1456-4e2f-b869-8fda6fa8a021', 'Department of Intergovernmental Affairs ', 'Department of Intergovernmental Affairs ', 'en-ca'),
+('7bcdf331-bb1e-46e9-b893-0f9cded03375', 'Department of Justice and Attorney General', 'Department of Justice and Attorney General', 'en-ca'),
+('37bc63bf-e98a-4e75-8f57-a7481ea804e5', 'Office of the Attorney General', 'Office of the Attorney General', 'en-ca'),
+('9f187f25-f30a-475c-b723-2b8ea7b2d444', 'Department of Post-Secondary Education, Training and Labour', 'Department of Post-Secondary Education, Training and Labour', 'en-ca'),
+('6da76df1-137f-4916-8155-811319e6c371', 'Department of Justice and Public Safety', 'Department of Justice and Public Safety', 'en-ca'),
+('90fe8170-1d23-4e37-8e19-bb583260cd5a', 'Department of Social Development', 'Department of Social Development', 'en-ca'),
+('eabe788f-7778-4304-a95b-176b7a988653', 'Department of Tourism, Heritage and Culture', 'Department of Tourism, Heritage and Culture', 'en-ca'),
+('14a23148-e5a4-411f-9a34-f3477e081460', 'Department of Transportation and Infrastructure', 'Department of Transportation and Infrastructure', 'en-ca'),
+('693a0df3-1e94-4c09-8376-ad3dd3a4bac2', 'Treasury Board', 'Treasury Board', 'en-ca');

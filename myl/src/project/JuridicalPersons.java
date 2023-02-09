@@ -5,11 +5,13 @@ package project;
 // ( . . .		. . .);
 
 public class JuridicalPersons {
+	private String[] parameters;
 	private String Id;
 	private String resourceIdentifier;
 	private boolean isValidRespondent;
 	private boolean isActive;
 	private int juridicalPersonTypeId;
+	
 	
 	public JuridicalPersons(String IdIn, 
 			String resourceIdentifierIn, 
@@ -21,10 +23,23 @@ public class JuridicalPersons {
 		isValidRespondent = isValidRespondentIn;
 		isActive = isActiveIn;
 		juridicalPersonTypeId = juridicalPersonTypeIdIn;
+		
+		parameters = new String[]{"Id", "ResourceIdentifier", "IsValidRespondent", "IsActive", "JuridicalPersonTypeId"};
 	}
 
 	public String getId() {
 		return Id;
+	}
+
+	public String getParameters() {
+		String result = "";
+		for(int i=0; i<parameters.length; i++) {
+			if (i>0) {
+				result += ", ";
+			}
+			result += parameters[i];
+		}
+		return result;
 	}
 	
 	public String toString() {

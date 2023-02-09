@@ -1,0 +1,22 @@
+INSERT INTO caselogixcms_dev.juridicalpersons.JuridicalPersons (Id, ResourceIdentifier, IsValidRespondent, IsActive, JuridicalPersonTypeId)
+VALUES
+('93dafb93-1c0e-41dc-bddf-756f47f789b3', 'ByvsefusR8HxPrlSUgajJcj1urdGqWF8p4O7UKAR', 1, 1, 1),
+('82e025a8-ea77-4cc6-adc1-66379cda0f19', '6Cs6zP17k3QhuBGGaPMfezlWhKoVDPLcCgHIKqBj', 1, 1, 1),
+('bffb8cd8-253f-48c7-8fc7-c98416e8f970', 'JtINi0JVOZq89uqFInsu7TW0RXC95IUtXzPdcPx7', 1, 1, 1),
+('d1ecd7a7-ca40-4737-91bc-248f4c811e45', 'no1I9ODCd7RlLl5wzWZ9f7HHd3RcAUYnbBeSt8Ln', 1, 1, 1),
+('181a8daa-1ad7-4e4d-b071-59e5de68ec26', 'ET3a0J6AtVflqVeUokzO5sHGWrgTGe8JTsFwuqVG', 1, 1, 1),
+('eb8c89a1-ded8-486a-b069-53e298395f7c', 'LmhIn57eqDNnSUu5WAFU19tQEZTjqfvKY66aSmGJ', 1, 1, 1),
+('bb62443c-bf3b-40d2-be1a-c91cc532a5fb', '2HTsSpV0zZSyileaVmbTbLKG0UMQLFabV9VEANH6', 1, 1, 1),
+('e5380230-c0a3-4687-b461-e369f02da398', 'PRojgVZ2FnejCukOVgeo5P6mfzqconrFUlNSGHWp', 1, 1, 1),
+('7a8e7794-15a6-45ab-9535-101fd4c87f9b', 'ejhcd1h9rsgotIlUFfBo6x7GSw7LFh3qkfJ36ggH', 1, 1, 1),
+('1844214d-bbc5-44c1-92c1-fc8196bcb765', 'N8smpyZ4bXv25rmPFUHv2EXjiDRRMhEQ4uyynRMA', 1, 1, 1),
+('b25718eb-f52a-4e32-b6d4-772e7840dbb6', 'qlTfvkJNPvmeI4Dth9C5fPmvkYLe4fqAicU4iV8p', 1, 1, 1),
+('5e293086-1456-4e2f-b869-8fda6fa8a021', 'bD9vdE89AUCmVBRmwqWrGF81EdJaPJtA4frehKW9', 1, 1, 1),
+('7bcdf331-bb1e-46e9-b893-0f9cded03375', 'cNn8GnV5CvJs7SuW5QlYKaGBI9WPtSIt9OvY0vuS', 1, 1, 1),
+('37bc63bf-e98a-4e75-8f57-a7481ea804e5', 'kBZFsIGmBwAWGbRkihmEvmbO4G0mBiY1Fd2DcAHW', 1, 1, 1),
+('9f187f25-f30a-475c-b723-2b8ea7b2d444', 'tjC5nWd5jwQMLtt96zoPXClmBUGjfldXpw5pYGni', 1, 1, 1),
+('6da76df1-137f-4916-8155-811319e6c371', 'JiiAD4d2wCl0d9Oug5nUgFqxdupIJ2H5qLRCYnV4', 1, 1, 1),
+('90fe8170-1d23-4e37-8e19-bb583260cd5a', 'CDpxxsHhKqvRo4eX7iLtbQxXJ7VdnMjYkSRlDZOx', 1, 1, 1),
+('eabe788f-7778-4304-a95b-176b7a988653', 'Rf7zOrIs329bw54g9UBYaaKH2wzBpZ57nrpWwFEJ', 1, 1, 1),
+('14a23148-e5a4-411f-9a34-f3477e081460', 'vGTYjz8LB3eETouvVOQnRg3p08ZAylWQXlTxeE2a', 1, 1, 1),
+('693a0df3-1e94-4c09-8376-ad3dd3a4bac2', 'fA6s0FDgPFfybiJUsYB9xGkxWvw6PSRmynrhqVcx', 1, 1, 1);

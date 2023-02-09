@@ -5,6 +5,7 @@ package project;
 // ( . . .		. . .);
 
 public class JuridicalPersonNameTranslations {
+		private String[] parameters;
 		private String JuridicalPersonNameJuridicalPersonId;
 		private String LegalName;
 		private String OperatingName;
@@ -16,8 +17,21 @@ public class JuridicalPersonNameTranslations {
 		LegalName = LegalNameIn;
 		OperatingName = OperatingNameIn;
 		Culture = CultureIn;
+		
+		parameters = new String[]{"JuridicalPersonNameJuridicalPersonId", "LegalName", "OperatingName", "Culture"};
 	}
 	
+	public String getParameters() {
+		String result = "";
+		for(int i=0; i<parameters.length; i++) {
+			if (i>0) {
+				result += ", ";
+			}
+			result += parameters[i];
+		}
+		return result;
+	}
+
 	public String toString() {
 		String result = "('" + JuridicalPersonNameJuridicalPersonId + "'" + 
 				", '" + LegalName + "'" +

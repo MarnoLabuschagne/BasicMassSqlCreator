@@ -6,8 +6,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class ToFileWriter {
-	public boolean writeToFile(ArrayList<?> list, String name, String param) {
-		File file = new File(name + ".txt");
+	public boolean writeToFile(ArrayList<?> list, String prefix, String name, String param) {
+		String path = "C:\\Users\\malabuschagne\\source\\javaThings\\BasicMassSqlCreator\\docs\\output";
+		File file = new File(path + "\\" + name + ".txt");
 		file.delete();
 		try {
 			if (file.createNewFile()) {
@@ -15,10 +16,10 @@ public class ToFileWriter {
 			  } else {
 			    System.out.println("File already exists.");
 			  }
-			FileWriter writer = new FileWriter(file.getName());
+			FileWriter writer = new FileWriter(path + "\\" + file.getName());
 			
 			writer.write("INSERT INTO " +
-					name + " (" + 
+					prefix + name + " (" + 
 					param + ")\n");
 			writer.write("VALUES\n");
 			
