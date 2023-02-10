@@ -1,4 +1,4 @@
-package project;
+package project.objects;
 //INSERT INTO JuridicalPersons(Id, ResourceIdentifier, IsValidRespondent, IsActive, JuridicalPersonTypeId)
 //VALUES
 //	  ('67a03d71-bb6f-4f34-b6a1-6c3b3aa4f4de', 'random 40 characters', 1, 1, 1),

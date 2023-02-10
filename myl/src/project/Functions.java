@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.UUID;
 
+import project.objects.JuridicalPersonNameTranslations;
+import project.objects.JuridicalPersons;
+import project.objects.NaturalPersons;
+import project.objects.SystemicFileTranslations;
+import project.objects.SystemicFiles;
+
 public class Functions {
 	//Creates a random string.
 	//leftLimit : smallest value characters
@@ -45,7 +51,6 @@ public class Functions {
 	public static ArrayList<JuridicalPersonNameTranslations> makeJPNTList(
 			ArrayList<String> list,
 			ArrayList<JuridicalPersons> jPlist) {
-		
 		ArrayList<JuridicalPersonNameTranslations> result = new ArrayList<JuridicalPersonNameTranslations>();
 		for (int i=0; i<list.size(); i++) {
 			result.add(new JuridicalPersonNameTranslations(jPlist.get(i).getId(), list.get(i), list.get(i), "en-ca"));
@@ -57,7 +62,6 @@ public class Functions {
 		ArrayList<SystemicFiles> result = new ArrayList<SystemicFiles>();
 		for (int i=0; i<size; i++) {
 			UUID uuid = UUID.randomUUID();
-			UUID.randomUUID().toString();
 			result.add(new SystemicFiles(uuid.toString(), UUID.randomUUID().toString(), Functions.randomString(48, 122, 40), false));
 			//System.out.println(result.get(i));
 		}
@@ -79,4 +83,21 @@ public class Functions {
 		}
 		return result;
 	}
+	public static ArrayList<NaturalPersons> makeNPList(
+			ArrayList<String> listNPnames, 
+			ArrayList<String> listNPsurname,
+			ArrayList<String> listNPgenders) {
+		ArrayList<NaturalPersons> result = new ArrayList<NaturalPersons>();
+		try {
+			for (int i=0; i<listNPnames.size(); i++) {
+				UUID uuid = UUID.randomUUID();
+				result.add(new NaturalPersons(uuid.toString(), Functions.randomString(48, 122, 40), listNPnames.get(i), listNPsurname.get(i), listNPgenders.get(i)));
+				System.out.println(result.get(i).toString());
+			}
+		} catch (NullPointerException e) {
+			System.out.printf("Name list size[%d], surname list size [%d}, and gender list size[%d] are not equal\n", listNPnames.size(), listNPsurname.size(), listNPgenders.size());
+		}
+		return result;
+	}
+	
 }

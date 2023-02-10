@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import project.objects.query;
+
 public class ToFileWriter {
 	static String outputFilePath = "C:\\Users\\malabuschagne\\source\\javaThings\\BasicMassSqlCreator\\docs\\output";
 	public static boolean writeToFile(ArrayList<?> list, String fileName) {
@@ -40,7 +42,7 @@ public class ToFileWriter {
 			FileWriter writer = new FileWriter(outputFilePath + "\\" + file.getName());
 			
 			writer.write("INSERT INTO " +
-					prefix + name + " (" + 
+					prefix + "." + name + "\n(" + 
 					param + ")\n");
 			writer.write("VALUES\n");
 			

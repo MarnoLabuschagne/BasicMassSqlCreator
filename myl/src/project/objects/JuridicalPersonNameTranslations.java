@@ -1,4 +1,4 @@
-package project;
+package project.objects;
 //INSERT INTO JuridicalPersonNameTranslations(JuridicalPersonNameJuridicalPersonId, LegalName, OperatingName, Culture)
 //VALUES
 //	  ('67a03d71-bb6f-4f34-b6a1-6c3b3aa4f4de', 'Builders Association', 'Builders Association', 'en-ca'),
