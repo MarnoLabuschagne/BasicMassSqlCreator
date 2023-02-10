@@ -9,9 +9,9 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class randomString {
-	private static String dictionaryFilePath = "C:\\Users\\malabuschagne\\source\\javaThings\\BasicMassSqlCreator\\docs\\dictionary.txt";
+	private static String dictionaryFilePath = "C:\\Users\\malabuschagne\\source\\javaThings\\BasicMassSqlCreator\\docs\\";
 	
-	public static int populateDatabase(String filePath) throws FileNotFoundException {
+	public static int populateDatabase(String filePath, String fileName) throws FileNotFoundException {
 		int numWordsAdded = 0;
 		if (filePath == null) {
 			Scanner scan = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class randomString {
 	
 		ArrayList<String> dictionary = new ArrayList<String>();
 		try {
-			File fileOld = new File(dictionaryFilePath);
+			File fileOld = new File(dictionaryFilePath + fileName + ".txt");
 			System.out.println("Dictionary found: " + fileOld.canRead());
 			Scanner sc = new Scanner(fileOld);
 			while(sc.hasNext()){
@@ -31,7 +31,7 @@ public class randomString {
 			sc.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("Could not find Dictionary.\n\tCreating Dictionary");
-			File file = new File(dictionaryFilePath);
+			File file = new File(dictionaryFilePath + fileName + ".txt");
 			try {
 				file.createNewFile();
 			} catch (IOException e1) {
@@ -68,7 +68,7 @@ public class randomString {
 		}
 		sc.close();
 		try {
-			FileWriter writer = new FileWriter(dictionaryFilePath);
+			FileWriter writer = new FileWriter(dictionaryFilePath + fileName + ".txt");
 			for(int i=0; i<dictionary.size(); i++) {
 				writer.write(dictionary.get(i) + "\n");
 			}
@@ -79,15 +79,19 @@ public class randomString {
 		return numWordsAdded;
 	}
 	
-	public static ArrayList<String> randomPhrases(int wordCount, int phraseCount, int maxChar) {
+	public static ArrayList<String> randomPhrases(int wordCount, int phraseCount, int maxChar, String fileName) {
 		ArrayList<String> result = new ArrayList<String>();
 		try {
-			ArrayList<String> dictionary = ToFileWriter.listFromFile(dictionaryFilePath, 25, null);
+			ArrayList<String> dictionary = ToFileWriter.listFromFile(dictionaryFilePath + fileName + ".txt", 25, null);
 			Collections.shuffle(dictionary);
 			int progress = 0;
 			for (int i=0; i<phraseCount; i++) {
 				String phrase = "";
 				for (int j=0; j<dictionary.size() && j<wordCount; j++) {
+					if (progress+1 == dictionary.size()) {
+						Collections.shuffle(dictionary);
+						progress = 0;
+					}
 					String word = dictionary.get(progress++);
 					phrase += word + " ";
 				}
@@ -105,10 +109,10 @@ public class randomString {
 		return result;
 	}
 	
-	public static String randomPhrase(int wordCount) {
+	public static String randomPhrase(int wordCount, String fileName) {
 		String result = "";
 		try {
-			ArrayList<String> dictionary = ToFileWriter.listFromFile(dictionaryFilePath, 25, null);
+			ArrayList<String> dictionary = ToFileWriter.listFromFile(dictionaryFilePath + fileName + ".txt", 25, null);
 			Collections.shuffle(dictionary);
 			for (int i=0; i<dictionary.size() && i<wordCount; i++) {
 				result += dictionary.get(i) + " ";

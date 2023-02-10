@@ -1,4 +1,4 @@
-package project;
+package project.objects;
 
 public class SystemicFiles {
 	private String[] parameters;
